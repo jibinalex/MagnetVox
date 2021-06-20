@@ -136,7 +136,7 @@ function love.update(dt)
 
       if not sound:isPlaying() then
         if currentScreen == "levelOne" then
-          sound = love.audio.newSource("level_one_long.ogg", "stream")
+          sound = love.audio.newSource("level_one.ogg", "stream")
           love.audio.play(sound)
           love.audio.setVolume(0.5)
           sound.seek(sound, 103, "seconds")
